@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Explore the Solmere coastal residential concept demo: a responsive website prototype with sample photography and interactive sections. Not a real property listing.">
+  <title>Solmere — Coastal Residential Concept Demo</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Solmere">
+  <meta property="og:title" content="Solmere — Coastal Residential Concept Demo">
+  <meta property="og:description" content="Explore a responsive coastal residential website concept with sample photography and interactive sections. Not a real property listing.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta property="og:image:alt" content="Unsplash demonstration image; not approved property photography">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Solmere — Coastal Residential Concept Demo">
+  <meta name="twitter:description" content="Explore a responsive coastal residential website concept with sample photography and interactive sections. Not a real property listing.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta name="twitter:image:alt" content="Unsplash demonstration image; not approved property photography">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <a class="wordmark" href="#home" aria-label="Solmere home">solmere<span>®</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <a href="#story">The vision</a><a href="#setting">The setting</a><a href="#moments">A way of life</a><a href="#residences">Residences</a>
+    </nav>
+    <a class="header-cta" href="#enquire">Enquire <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-label="Coastal living">
+      <img class="hero-image" src="assets/hero-1440.avif" srcset="assets/hero-640.avif 640w, assets/hero-1440.avif 1440w" sizes="100vw" alt="Rocky coastline and sea — Unsplash demonstration image; not approved property photography" fetchpriority="high" decoding="async">
+      <div class="hero-shade"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A coastal living concept <span></span> <span class="asset-note">Sample photography</span></p>
+        <h1>Where the land<br>meets the <i>light.</i></h1>
+        <p class="hero-sub">A quieter kind of coastal living.</p>
+        <a class="hero-cta" href="#residences">Discover the residences <span aria-hidden="true">↗</span></a>
+      </div>
+      <a class="scroll-cue" href="#story"><span>Scroll to explore</span><i></i></a>
+      <p class="hero-index">01 <span>/</span> 04</p>
+    </section>
+
+    <section class="intro section-pad" id="story">
+      <div class="section-kicker reveal"><span>01</span><span>The vision</span></div>
+      <div class="intro-copy reveal">
+        <p class="eyebrow dark">A sense of place</p>
+        <h2>Life finds its own<br><i>natural rhythm.</i></h2>
+        <p class="body-copy">A considered coastal address, imagined around open skies, shifting tides and the simple pleasure of being outdoors. A place to slow down and find your own pace.</p>
+        <a class="text-link" href="#setting">Discover the setting <span>↗</span></a>
+      </div>
+      <figure class="intro-photo reveal">
+        <img src="assets/editorial-1200.avif" srcset="assets/editorial-480.avif 480w, assets/editorial-1200.avif 1200w" sizes="(min-width: 1920px) 1200px, (min-width: 701px) 79vw, 86vw" alt="Modern home framed by a coastal garden — Unsplash demonstration image; not approved property photography" loading="lazy" decoding="async">
+        <figcaption>Sample photography · Final imagery to be supplied</figcaption>
+      </figure>
+    </section>
+
+    <section class="setting section-pad" id="setting">
+      <div class="setting-head reveal"><div class="section-kicker"><span>02</span><span>The setting</span></div><h2>A landscape to<br><i>call your own.</i></h2><p>An illustrative study of coastal landscape, light and outdoor living — awaiting a client-approved location.</p></div>
+      <figure class="map-frame reveal" aria-label="Conceptual coastal site illustration with non-geographic boundary overlay">
+        <img class="map-illustration" src="assets/conceptual-coast-map.svg" alt="Abstract conceptual coastal site illustration; not a verified location, map or property boundary" loading="lazy" decoding="async">
+        <svg class="boundary" viewBox="0 0 1200 620" preserveAspectRatio="none" role="img" aria-label="Illustrative conceptual site boundary">
+          <path d="M244 195 L422 132 L552 166 L661 112 L807 164 L927 148 L1010 233 L966 339 L871 396 L807 502 L653 473 L550 517 L444 446 L332 438 L267 345 L188 293 Z" />
+        </svg>
+        <span class="map-label"><i></i> Illustrative site boundary</span>
+        <span class="map-coord">CONCEPTUAL ILLUSTRATION · NO VERIFIED LOCATION</span>
+      </figure>
+      <p class="map-disclaimer">Conceptual illustration only. It does not show a verified location or property boundary; approved map data and boundary assets are pending from the client.</p>
+    </section>
+
+    <section class="moments section-pad" id="moments">
+      <div class="moments-heading reveal"><div class="section-kicker"><span>03</span><span>A way of life</span></div><h2>Make room for<br><i>the in-between.</i></h2></div>
+      <div class="moments-layout reveal">
+        <div class="moment-list" role="tablist" aria-label="Coastal moments">
+          <button class="moment active" role="tab" aria-selected="true" aria-controls="momentImage" data-image="assets/moment-01-768.avif" data-alt="Quiet shoreline at the end of the day — Unsplash demonstration image; not approved property photography"><span>01</span><b>First light on the water</b><i>↗</i></button>
+          <button class="moment" role="tab" aria-selected="false" aria-controls="momentImage" data-image="assets/moment-02-768.avif" data-alt="Open sand and sea in the afternoon — Unsplash demonstration image; not approved property photography"><span>02</span><b>Long afternoons by the sea</b><i>↗</i></button>
+          <button class="moment" role="tab" aria-selected="false" aria-controls="momentImage" data-image="assets/moment-03-768.avif" data-alt="Warm evening light over a landscape — Unsplash demonstration image; not approved property photography"><span>03</span><b>Evenings that linger</b><i>↗</i></button>
+          <button class="moment" role="tab" aria-selected="false" aria-controls="momentImage" data-image="assets/moment-04-768.avif" data-alt="A shaded path through coastal greenery — Unsplash demonstration image; not approved property photography"><span>04</span><b>A slower way to wander</b><i>↗</i></button>
+        </div>
+        <figure class="moment-photo" id="momentImage" role="tabpanel" aria-label="First light on the water">
+          <img src="assets/moment-01-768.avif" srcset="assets/moment-01-768.avif 768w" sizes="(min-width: 701px) 46vw, 86vw" alt="Quiet shoreline at the end of the day — Unsplash demonstration image; not approved property photography" loading="lazy" decoding="async">
+          <figcaption>Sample photography · Final imagery to be supplied</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="residences section-pad" id="residences">
+      <div class="residences-top reveal"><div><div class="section-kicker"><span>04</span><span>The residences</span></div><h2>Quietly considered.<br><i>Made for living.</i></h2></div><p>Interior inspiration for a considered palette of light, texture and form. Final residence imagery and details are pending client approval.</p></div>
+      <div class="carousel reveal" aria-roledescription="carousel" aria-label="Interior inspiration gallery">
+        <button class="carousel-arrow prev" aria-label="Previous image">←</button>
+        <div class="carousel-window"><div class="carousel-track">
+          <figure class="slide"><img src="assets/interior-01-768.avif" srcset="assets/interior-01-480.avif 480w, assets/interior-01-768.avif 768w" sizes="(min-width: 1920px) 1120px, (min-width: 701px) 55vw, 82vw" alt="Warm neutral living space — Unsplash demonstration image; not approved property photography" loading="lazy" decoding="async"><figcaption><span>Living, in balance</span><small>Sample photography</small></figcaption></figure>
+          <figure class="slide"><img src="assets/editorial-1200.avif" srcset="assets/editorial-480.avif 480w, assets/editorial-1200.avif 1200w" sizes="(min-width: 1920px) 1120px, (min-width: 701px) 55vw, 82vw" alt="Calm contemporary interior — Unsplash demonstration image; not approved property photography" loading="lazy" decoding="async"><figcaption><span>A softer palette</span><small>Sample photography</small></figcaption></figure>
+          <figure class="slide"><img src="assets/interior-03-768.avif" srcset="assets/interior-03-480.avif 480w, assets/interior-03-768.avif 768w" sizes="(min-width: 1920px) 1120px, (min-width: 701px) 55vw, 82vw" alt="Sunlit contemporary interior — Unsplash demonstration image; not approved property photography" loading="lazy" decoding="async"><figcaption><span>Light in every room</span><small>Sample photography</small></figcaption></figure>
+          <figure class="slide"><img src="assets/interior-04-768.avif" srcset="assets/interior-04-480.avif 480w, assets/interior-04-768.avif 768w" sizes="(min-width: 1920px) 1120px, (min-width: 701px) 55vw, 82vw" alt="Natural materials in a coastal home — Unsplash demonstration image; not approved property photography" loading="lazy" decoding="async"><figcaption><span>Natural by nature</span><small>Sample photography</small></figcaption></figure>
+        </div></div>
+        <button class="carousel-arrow next" aria-label="Next image">→</button>
+        <div class="carousel-controls"><span class="slide-current" aria-live="polite" aria-atomic="true">01</span><div class="slide-dots" role="group" aria-label="Choose a slide"></div><span class="slide-total">04</span></div>
+      </div>
+    </section>
+
+    <section class="developer section-pad" aria-label="Developer information">
+      <div class="section-kicker reveal"><span>05</span><span>The developer</span></div>
+      <div class="developer-lockup reveal"><div class="developer-mark" role="img" aria-label="Developer branding placeholder; client identity not supplied"><span>DEVELOPER BRAND<small>PLACEHOLDER · CLIENT IDENTITY PENDING</small></span></div><div><p class="eyebrow dark">Client assets pending</p><h2>Developer identity<br><i>to be supplied.</i></h2><p class="body-copy">This space is reserved for the client-approved developer name, brand identity and verified company information.</p></div></div>
+    </section>
+
+    <section class="enquiry section-pad" id="enquire">
+      <div class="enquiry-copy reveal"><div class="section-kicker"><span>06</span><span>Get in touch</span></div><h2>Begin a<br><i>conversation.</i></h2><p>Contact details and an approved enquiry destination are required before launch.</p><div class="contact-note"><span>ENQUIRIES</span><p>Client contact details pending</p></div></div>
+      <form class="enquiry-form reveal" id="enquiryForm" novalidate data-mode="demo" data-endpoint="" data-turnstile-site-key="" data-privacy-message="">
+        <div class="form-row"><label>First name<input name="firstName" autocomplete="given-name" required minlength="2" placeholder="Your first name"><span class="field-error"></span></label><label>Surname<input name="surname" autocomplete="family-name" required minlength="2" placeholder="Your surname"><span class="field-error"></span></label></div>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" required placeholder="Your phone number"><span class="field-error"></span></label>
+        <label>Email address<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"><span class="field-error"></span></label>
+        <label>How did you hear about us?<select name="source" required><option value="" disabled selected>Please select</option><option>Online search</option><option>Social media</option><option>Word of mouth</option><option>Press or publication</option><option>Other</option></select><span class="field-error"></span></label>
+        <label class="form-trap" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label>
+        <div class="turnstile-widget" id="turnstileWidget"></div>
+        <input type="hidden" name="turnstileToken" value="">
+        <button class="submit-button" type="submit">Send enquiry <span>↗</span></button>
+        <p class="privacy-note" id="privacyNote">Demo Mode only. Your details are not sent or stored. Please do not enter real personal information.</p>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#home">solmere<span>®</span></a><p>Coastal living, considered.</p><div><span>© <span id="year"></span> Solmere</span><span class="footer-note">Concept website · Placeholder branding</span><a href="#home">Back to top ↑</a></div></footer>
+</body>
+</html>

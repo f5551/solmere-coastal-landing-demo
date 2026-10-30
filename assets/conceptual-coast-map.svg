@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" preserveAspectRatio="none" role="img" aria-labelledby="title desc">
+  <title id="title">Conceptual coastal site illustration</title>
+  <desc id="desc">Abstract top-down illustration of a coastline and landscape. It does not represent a verified location or property boundary.</desc>
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9aaca5"/>
+      <stop offset="1" stop-color="#6f8981"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7e1d1"/>
+      <stop offset="1" stop-color="#c9cbb9"/>
+    </linearGradient>
+    <pattern id="grain" width="42" height="42" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="9" r="1.4" fill="#718276" opacity=".2"/>
+      <circle cx="31" cy="29" r="1" fill="#f7f2e7" opacity=".65"/>
+      <path d="M15 35q4-4 8 0" fill="none" stroke="#8b9885" stroke-width="1" opacity=".23"/>
+    </pattern>
+    <pattern id="water-lines" width="110" height="54" patternUnits="userSpaceOnUse">
+      <path d="M-10 19q30-11 60 0t60 0M-10 41q30-11 60 0t60 0" fill="none" stroke="#e6ede6" stroke-width="2" opacity=".28"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="620" fill="url(#land)"/>
+  <rect width="1200" height="620" fill="url(#grain)"/>
+  <path d="M0 0h264c30 54 7 94 40 142 34 50 10 93 43 139 29 40 5 87 42 125 31 32 31 83 73 117l-13 97H0z" fill="url(#water)"/>
+  <path d="M0 0h264c30 54 7 94 40 142 34 50 10 93 43 139 29 40 5 87 42 125 31 32 31 83 73 117l-13 97H0z" fill="url(#water-lines)"/>
+  <path d="M264 0c30 54 7 94 40 142 34 50 10 93 43 139 29 40 5 87 42 125 31 32 31 83 73 117" fill="none" stroke="#f3ead5" stroke-width="18" opacity=".88"/>
+  <path d="M282 0c30 54 7 94 40 142 34 50 10 93 43 139 29 40 5 87 42 125 31 32 31 83 73 117" fill="none" stroke="#b6aa8d" stroke-width="2" opacity=".8"/>
+  <g fill="#9da88e" opacity=".7">
+    <path d="M491 39q70-37 132-1t36 79q-49 26-116 11t-52-89Z"/>
+    <path d="M882 38q74-27 131 13t18 83q-66 23-121-6t-28-90Z"/>
+    <path d="M1041 328q67-28 122 15t-2 81q-74 15-116-18t-4-78Z"/>
+    <path d="M477 512q61-42 119-10t30 79q-57 23-110 2t-39-71Z"/>
+  </g>
+  <g fill="none" stroke="#8e9a88" stroke-width="2" opacity=".46">
+    <path d="M384 0c74 71 55 120 107 173s54 107 99 151 70 91 124 109 85 54 100 120"/>
+    <path d="M362 0c74 71 55 120 107 173s54 107 99 151 70 91 124 109 85 54 100 120"/>
+    <path d="M700 0c-25 61 16 105 66 135s66 70 55 122 28 76 91 94 91 58 75 112"/>
+    <path d="M729 0c-25 61 16 105 66 135s66 70 55 122 28 76 91 94 91 58 75 112"/>
+  </g>
+  <g fill="#d4cbb6" stroke="#a9a58f" stroke-width="2" opacity=".8">
+    <path d="m592 219 48-18 42 23-4 48-50 18-42-26z"/>
+    <path d="m755 285 54-16 38 25-9 47-55 12-34-25z"/>
+    <path d="m909 187 48-13 34 25-7 43-52 14-34-25z"/>
+    <path d="m539 390 44-17 38 24-7 42-46 15-33-25z"/>
+  </g>
+  <path d="M365 28c83 47 122 61 188 68s91 50 163 58 121 35 170 71 106 53 200 39" fill="none" stroke="#f7f4ea" stroke-width="5" stroke-dasharray="2 13" opacity=".65"/>
+</svg>
