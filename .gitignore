@@ -11,6 +11,7 @@ secrets.*
 # Dependencies and generated output
 node_modules/
 dist/
+_site/
 build/
 coverage/
 .vercel/

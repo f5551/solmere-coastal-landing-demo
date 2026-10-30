@@ -27,6 +27,9 @@ A responsive, one-page coastal residential **concept demonstration** built with 
 │   └── enquiry.js             Optional, inactive Vercel serverless enquiry handler
 ├── server.js                  Loopback-only local static development server
 ├── CLIENT_DEMO_OVERVIEW.md    Purpose and scope of the demonstration
+├── PROJECT_DOCUMENTATION.md   Architecture, verification, and technical limitations
+├── .github/workflows/
+│   └── pages.yml              GitHub Pages static deployment workflow
 ├── .gitignore                 Excludes local secrets and generated files
 └── README.md                  Setup, editing, deployment, and integration notes
 ```
@@ -43,19 +46,26 @@ node server.js
 
 Visit <http://127.0.0.1:8000/>. The server binds to `127.0.0.1` only and is for local preview, not production hosting. Stop it with `Ctrl+C`. No npm install or build step is required.
 
-## Static demo deployment
+## GitHub Pages deployment
 
-The website itself is static. A demo deployment requires only `index.html`, `styles.css`, `script.js`, `favicon.svg`, and the complete `assets/` directory. Keep the relative paths unchanged. Do not expose the local development server as a public production server. Demo Mode needs no Node server after deployment.
+The website itself is static. The workflow at `.github/workflows/pages.yml` prepares `_site` from only `index.html`, `styles.css`, `script.js`, `favicon.svg`, and the complete `assets/` directory. It deliberately excludes `server.js` and `api/enquiry.js`; it does not activate email submission. All site asset references are relative, so they resolve below the GitHub Pages project path. Demo Mode needs no Node server after deployment.
 
-For Cloudflare Pages Git integration, use this build command and output directory:
+Expected project URL:
 
-```sh
-mkdir -p dist && cp index.html styles.css script.js favicon.svg dist/ && cp -R assets dist/assets
-```
+<https://f5551.github.io/solmere-coastal-landing-demo/>
 
-Set the build output directory to `dist`. This stages only the static website files; the command does not install dependencies. Other static hosts are suitable if they serve HTML, CSS, JavaScript, SVG, and AVIF correctly. See the [Cloudflare Pages static HTML guide](https://developers.cloudflare.com/pages/framework-guides/deploy-anything/).
+GitHub Pages requires its publishing source to be set to **GitHub Actions** once for the repository. If this is not already configured:
 
-The project does not specify a production domain, canonical URL, or `og:url`. The social preview image and Google Fonts stylesheet are external requests; their availability depends on the network and preview crawler. Preview the actual hosted build and verify its assets, favicon, and Demo Mode before sharing. No deployment is performed by this repository setup.
+1. Open the repository's **Settings → Pages**.
+2. Under **Build and deployment → Source**, select **GitHub Actions**.
+3. Open **Actions**, select **Deploy Solmere demo to GitHub Pages**, and run it on `main` if the initial push did not start a successful run.
+4. Wait for the `Deploy to GitHub Pages` job to complete, then use the URL displayed by the deployment. Verify the live site before sharing.
+
+The project does not specify a production domain, canonical URL, or `og:url`. The social preview image and Google Fonts stylesheet remain external requests; their availability depends on the network and preview crawler. The workflow deploys only static site files, not a backend or the local development server.
+
+## Screenshots
+
+No screenshot files are currently checked into the repository. Use the deployed Pages URL for the current browser preview; add screenshots only when there are captured, approved images to include.
 
 ## Update demo content
 
